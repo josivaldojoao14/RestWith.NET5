@@ -59,7 +59,7 @@ namespace RestWith.NET5
             // Injeção de dependência *books*
             services.AddScoped<IBookBusiness, BookBusinessImplementation>();
 
-            // Injeção de dependência *repositório genérico*
+            // Injeção de dependência (repositório genérico)
             services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
         }
 
